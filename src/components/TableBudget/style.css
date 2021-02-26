@@ -1,0 +1,130 @@
+table tbody tr:hover {
+  background: rgb(184, 207, 248) !important;
+}
+
+th, td {
+  text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  outline: none;
+}
+
+input[type=number] {
+  -moz-appearance: none;
+  outline: none;
+}
+
+.active{
+  background: cornflowerblue !important;
+}
+
+.btn-chart {
+  color: #fff;
+  margin: 0px 5px 5px 0px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+textarea {
+  height: 195px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
+  width: 100%;
+}
+
+.header-titles {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+}
+
+.header-titles li {
+  padding: .3rem .75rem;
+}
+
+.input-container {
+  background-color: #eee;
+  padding: .5rem;
+  margin-top: .8rem;
+  margin-left: .5rem;
+}
+
+.current-amt {
+  margin-top:.7rem;
+  margin-left:.3rem;
+  flex-grow: 1;
+}
+
+.header-btn {
+  display: flex;
+}
+
+.input-wrapper {
+  display: flex;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  padding-bottom: .5rem;
+}
+
+.input:first-child {
+  padding-bottom: .5rem;
+  margin-bottom: .5rem;
+  border-bottom: 1px solid grey;
+}
+
+.input-wrapper input {
+  border: none;
+  width: 75%;
+  font-size: inherit;
+}
+
+.input li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+
+.suggestion-container {
+  background-color: #eee;
+  padding: 0.5rem;
+  margin-top: .8rem;
+  margin-left: .5rem;
+}
+
+.suggestion-container h5 {
+  text-align: center;
+  padding-bottom: .3rem;
+  border-bottom: 1px solid grey;
+}
+
+.suggestion-container ul {
+  list-style: none;
+}
+
+.suggestion-container li {
+  width: 100%;
+  padding: .5rem;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}

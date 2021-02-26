@@ -1,0 +1,7 @@
+table tbody tr:hover {
+  background: rgb(184, 207, 248);
+}
+
+th, td {
+  text-align: center !important;
+}

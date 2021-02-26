@@ -1,0 +1,42 @@
+#riskbar {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  list-style: none;
+  background-color: lightsteelblue;
+  border-radius: 5px;
+  margin-left:0px;
+  padding:5px;
+}
+
+#riskbar li{
+  background-color: white;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  width: 62px;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 5px;
+  margin: 2px;
+  font-size: 27px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#riskbar li:hover {
+  background-color: cornflowerblue;
+}
+
+#riskbar .active{
+  background-color: cornflowerblue;
+}
+
+#btnContinue {
+  color: #fff;
+  margin-left: 10px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}

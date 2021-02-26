@@ -1,0 +1,24 @@
+table tbody tr:hover {
+  background: rgb(184, 207, 248) !important;
+}
+
+table tr {
+  text-align: center;
+}
+
+.active{
+  background: cornflowerblue !important;
+}
+
+#btnChart {
+  margin-left: 5px;
+  border: 1px solid #000;
+}
+
+.hideActive {
+  visibility: collapse;
+}
+
+.showActive {
+  visibility: visible;
+}
