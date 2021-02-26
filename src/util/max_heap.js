@@ -58,9 +58,6 @@ class MaxHeap {
         return max;
     }
 
-
-
-
     insert(val, idx) {
         const node = new Node(val, idx)
         this.array.push(node);
@@ -69,4 +66,4 @@ class MaxHeap {
 
 }
 
-module.exports = { MaxHeap }
+export default MaxHeap;
