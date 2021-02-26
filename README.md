@@ -17,8 +17,8 @@ Run `yarn start` to preview
 https://finance-advisor.vercel.app
 
 ## Images ###
-<img src="https://www.dropbox.com/s/0rgyaub67wjiwex/finance-app.PNG?dl=0" alt="DHT11 Sensor" width="200"/>
-<img src="https://www.dropbox.com/s/xjbw7yjka21se50/finance-app-chart.PNG?dl=0" alt="DHT11 Sensor" width="200"/>
-<img src="https://www.dropbox.com/s/0qhsduwr2y524kd/finance-app-portfolio.PNG?dl=0" alt="DHT11 Sensor" width="200"/>
+<img src="https://www.dropbox.com/s/0rgyaub67wjiwex/finance-app.PNG?raw=1" alt="DHT11 Sensor" width="200"/>
+<img src="https://www.dropbox.com/s/xjbw7yjka21se50/finance-app-chart.PNG?raw=1" alt="DHT11 Sensor" width="200"/>
+<img src="https://www.dropbox.com/s/0qhsduwr2y524kd/finance-app-portfolio.PNG?raw=1" alt="DHT11 Sensor" width="200"/>
 
 

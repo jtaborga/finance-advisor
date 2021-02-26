@@ -1,5 +1,5 @@
-const { MaxHeap } = require('./max_heap');
-const { MinHeap } = require('./min_heap');
+import MaxHeap  from './max_heap';
+import MinHeap  from './min_heap';
 
 export const rebalance = (diff, keys) => {
     let heaps = buildMinMaxHeap(diff);
