@@ -23,15 +23,15 @@ class ResultsView extends Component {
         <div>
           <Navbar history={history}/>
           <Grid className="display">
-            <Cell small={2} large={2}></Cell>
-            <Cell small={8} large={8}>
+            <Cell small={1} large={1}></Cell>
+            <Cell small={10} large={10}>
               <section>
-                <BasicCallout title="Personalized Portfolio"></BasicCallout>                
+                <BasicCallout title="Personalized Portfolio"></BasicCallout>
                 <TableSingleRow></TableSingleRow>
                 <TableBudget history={history}></TableBudget>
               </section>
             </Cell>
-            <Cell small={2} large={2}></Cell>
+            <Cell small={1} large={1}></Cell>
           </Grid>
         </div>
       </>

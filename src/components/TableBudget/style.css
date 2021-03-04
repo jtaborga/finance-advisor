@@ -10,12 +10,14 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-  outline: none;
+  outline: 1px;
+  border-radius: .5rem;
 }
 
 input[type=number] {
-  -moz-appearance: none;
-  outline: none;
+  -moz-appearance: text;
+  border: 1px solid #000;
+  border-radius: .5rem;
 }
 
 .active{
