@@ -17,6 +17,7 @@ table tr {
 
 .hideActive {
   visibility: collapse;
+  height:0;
 }
 
 .showActive {

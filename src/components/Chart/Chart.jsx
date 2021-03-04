@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-
 import { connect } from 'react-redux';
 import { ResponsivePieCanvas } from '@nivo/pie'
-import './style.css';
 import { Cell, Grid } from 'react-foundation';
+
+import './style.css';
 
 class Chart extends Component {
 
@@ -17,30 +17,30 @@ class Chart extends Component {
                 <div className="pieCv">
                     <ResponsivePieCanvas 
                         data={data}
-                        margin={{ top: 50, right: 80, bottom: 80, left: 80 }}
+                        margin={{ top: 10, right: 95, bottom: 40, left: 95 }}
                         innerRadius={0.6}
-                        padAngle={0.7}
+                        padAngle={0.3}
                         cornerRadius={1}
                         colors={{ scheme: 'category10' }}
                         borderWidth={1}
                         borderColor={{ from: 'color', modifiers: [ [ 'darker', 0.2 ] ] }}
                         radialLabelsSkipAngle={16}
-                        radialLabelsTextColor="#333333"
+                        radialLabelsTextColor="#333"
                         radialLabelsLinkColor={{ from: 'color' }}
                         sliceLabelsSkipAngle={16}
-                        sliceLabelsTextColor="#333333"                        
+                        sliceLabelsTextColor="#fff"                        
                         legends={[
                             {
                                 anchor: 'bottom',
                                 direction: 'row',
-                                justify: false,                                
+                                justify: true,                                
                                 translateX: 0,
-                                translateY: 56,
+                                translateY: 16,
                                 itemsSpacing: 0,
-                                itemWidth: 80,
-                                itemHeight: 18,
-                                itemTextColor: '#999',
-                                itemDirection: 'left-to-right',
+                                itemWidth: 55,
+                                itemHeight: 38,
+                                itemTextColor: '#000',
+                                itemDirection: 'top-to-bottom',
                                 itemOpacity: 1,
                                 symbolSize: 18,
                                 symbolShape: 'circle',
@@ -48,7 +48,7 @@ class Chart extends Component {
                                     {
                                         on: 'hover',
                                         style: {
-                                            itemTextColor: '#000'
+                                            itemTextColor: '#999'
                                         }
                                     }
                                 ]

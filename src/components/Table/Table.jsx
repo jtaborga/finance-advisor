@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Grid, Cell, Button, Colors, Sizes } from 'react-foundation';
+import { Grid, Cell } from 'react-foundation';
+
+import Chart from '../Chart/Chart';
 
 import './style.css';
-import Chart from '../Chart/Chart';
 
 class Table extends Component {
 
@@ -20,19 +21,19 @@ class Table extends Component {
   }
 
   handleActiveChartClass(){
-    return this.state.chart ? "showActive" : "hideActive";
+    return this.props.chart ? "showActive" : "hideActive";
   }
 
   handleActiveTableClass(){
-    return this.state.chart ? "hideActive" : "showActive";
+    return this.props.chart ? "hideActive" : "showActive";
   }
 
   toggleChartButtonText(){
-    return this.state.chart ? "View Data" : "View Graphics";
+    return this.props.chart ? "View Data" : "View Graphics";
   }
 
   toggleChartButtonImage(){
-    if(this.state.chart){
+    if(this.props.chart){
       return <img src="table.png" height="24" width="24" alt="table" />;
     }else{
       return <img src="doughnut.png" height="24" width="24" alt="doughnut" />;
@@ -41,9 +42,8 @@ class Table extends Component {
 
   toggleChartView(){
     let value = this.props.chart;
-    this.props.chart = !value
-    console.log(value)
-    return this.props.chart
+    this.props.chart = !value;
+    return this.props.chart;
   }
     
   renderTableData() {
@@ -76,8 +76,8 @@ class Table extends Component {
     return (
       <section>
         <Grid className="display">
-          <Cell small={2} large={2}></Cell>
-          <Cell small={8} large={8}>
+          <Cell small={1} large={1}></Cell>
+          <Cell small={10} large={10}>
             <div className={this.handleActiveTableClass()}>
               <table>
                 <thead>
@@ -97,8 +97,7 @@ class Table extends Component {
             </div>
             
           </Cell>
-          <Cell small={2} large={2}>
-            <Button id="btnChart" size={Sizes.SMALL} color={Colors.WARNING} isDisabled={isNaN(this.props.riskNumber)} onClick={() => !isNaN(this.props.riskNumber) ? this.setState({ chart: !this.state.chart }) : null }>{ this.toggleChartButtonImage() }</Button>
+          <Cell small={1} large={1}>
           </Cell>
         </Grid>
       </section>
@@ -110,7 +109,7 @@ const mapStateToProps = state => ({
   riskColumns: state.risklevel.riskColumns,
   risk: state.risklevel.riskLevels,
   riskNumber: state.risklevel.activeRiskNumber,
-  chart: false,
+  chart: state.risklevel.chart,
 })
 
 const mapDispatchToProps = dispatch => ({});

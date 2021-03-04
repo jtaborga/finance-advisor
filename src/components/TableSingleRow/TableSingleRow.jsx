@@ -24,8 +24,7 @@ class TableSingleRow extends Component {
     return (
       <section>
         <Grid className="display">
-          <Cell small={1} large={1}></Cell>
-          <Cell small={10} large={10}>
+          <Cell small={12} large={12}>
             <h5>Risk Level: { isNaN(riskNumber) ? 'Not Selected' : riskNumber }</h5>
             <table>
               <thead>
@@ -40,8 +39,7 @@ class TableSingleRow extends Component {
               </tbody>
             </table>
           </Cell>
-          <Cell small={1} large={1}></Cell>
-          </Grid>
+        </Grid>
       </section>
     )
   }

@@ -1,9 +1,11 @@
 const TOGGLE_RISK = 'TOGGLE_RISK';
+const TOGGLE_CHART = 'TOGGLE_CHART';
 const SAVE_RISK_DATA = 'SAVE_RISK_DATA';
 const SAVE_RISK_DIFFERENCE = 'SAVE_RISK_DIFFERENCE';
 
 export const RiskLevelActions = {
   TOGGLE_RISK,
+  TOGGLE_CHART,
   SAVE_RISK_DATA,
   SAVE_RISK_DIFFERENCE,
 };
@@ -28,4 +30,11 @@ export function saveDifference(riskDifference){
     type: RiskLevelActions.SAVE_RISK_DIFFERENCE,
     riskDifference
   };
+}
+
+export function toggleChart(chartValue){
+  return {
+    type: RiskLevelActions.TOGGLE_CHART,
+    chart: chartValue
+  }
 }

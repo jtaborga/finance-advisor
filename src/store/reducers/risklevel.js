@@ -132,6 +132,7 @@ const INITIAL_STATE = {
     { id: 'Foreign', label: 'Foreign',   value: 0 },
     { id: 'Small Cap', label: 'Small Cap', value: 0 }
   ],
+  chart: false,
   showAmount: true,
   difference: [0, 0, 0, 0, 0],
 };
@@ -144,6 +145,11 @@ export default function risklevel(state = INITIAL_STATE, action) {
         ...state, 
         activeRiskNumber: action.risklevel,
         activeRiskRow: values,
+      }
+    case RiskLevelActions.TOGGLE_CHART:
+      return {
+        ...state,
+        chart: action.chart,
       }
     case RiskLevelActions.SAVE_RISK_DATA:
       return {

@@ -20,6 +20,7 @@
   border: 2px solid #000;
   border-radius: 5px;
   margin: 2px;
+  padding:0 5px 0 5px;
   font-size: 27px;
   font-weight: 500;
   cursor: pointer;
@@ -35,7 +36,15 @@
 
 #btnContinue {
   color: #fff;
-  margin-left: 10px;
+  /*margin-left: 10px;*/
+  border: 2px solid #000;
+  border-radius: 5px;
+  height: 48px;
+  cursor: pointer;
+}
+
+#btnChart {
+  margin-left: 5px;
   border: 2px solid #000;
   border-radius: 5px;
   cursor: pointer;
