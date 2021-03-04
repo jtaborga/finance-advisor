@@ -154,13 +154,11 @@ class TableBudget extends Component {
     return (
       <section>
         <Grid className="display">
-          <Cell small={1} large={1}></Cell>
-          <Cell small={10} large={10}>
+          <Cell small={12} large={12}>
             <Button className='btn-chart' size={Sizes.SMALL} color={Colors.SECONDARY} onClick={()=> this.handleClearFields(options) }>Clear</Button>
             <Button className='btn-chart' size={Sizes.SMALL} color={Colors.PRIMARY} onClick={()=> this.saveCustomRisk(options) }>Rebalance</Button>
             <Button className='btn-chart' size={Sizes.SMALL} color={Colors.ALERT} onClick={()=>this.handleGoBackButton()}>Go Back</Button>
           </Cell>
-          <Cell small={1} large={1}></Cell>
         </Grid>
         <Grid className="display">
           <Cell small={12} large={6}>
